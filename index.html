@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+    <meta charset="utf-8">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+ <script type="text/javascript">
+ 
+   function check_info(form){
+   if(form.id.value=="music"){
+if(form.pass.value=="12345"){
+location="routertesting.html";
+}else{
+alert("invalid password")
+}
+}
+else{
+alert("invalid userid")
+}
+}
+ </script>
+
+</head>
+<body>
+
+
+<center><h1 color:green></h1></center>
+<div class="loginbox">
+<img src="img/dj.jpg" class="amir">
+<h2>Login Here</h2>
+USER ID<form name="login"><input name="id"  type="text">
+PASSWORD<input name="pass"  type="password">
+
+<input type="button" value="login" 
+onClick="check_info(this.form)"><input type="button" value="reset"></form>
+<a href="signup.html">Don't have an account?</a><br>
+
+</body>
+</html>

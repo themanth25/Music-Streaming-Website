@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossrigin="anonymous"></script>
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="F:\frontend\project\font-awesome-4.7.0\css\font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+<div id="main" style="background: linear-gradient(to top, #730073 19%, #000000 110%);">
+  <div class="navbar navbar-expand-sm justify-content-center navbar-dark" style="font-weight: bold; ">
+      <ul class="navbar-nav" style="font-size: 20px; padding: 25px">
+  <li class="nav-item" style="margin-right: 50px;" >
+    <a class="nav-link" href="#/!">HOME</a>
+  </li>
+  <li class="nav-item" style="margin-right: 50px; " >
+    <a class="nav-link"  href="#!dis">DISCOVER</a>
+  </li>
+  <li class="nav-item" style="margin-right: 50px; border-bottom: 2px solid yellow">
+    <a class="nav-link active" href="#!chart">CHARTS</a>
+  </li>
+</ul>
+      <input type="search" id="search_bar" placeholder="Search" style="position: absolute; right: 30px; background-color: rgba(255,255,255,0.0); color: white; font-size: 20px; text-align: right; border:none; border-bottom: 2px solid white"/>
+  </div>
+
+
+    
+    <br>
+    <div id="artist">
+
+        <div class="container-fluid">
+            <h1 style="color: white"><b>English Chartbusters</b></h1>
+            <a href="#!englishchart"><p style="text-align: right; color: white">see all</p></a>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('cad287f5-618a-4056-9bee-01685b824e56_512.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(0,'eminem.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Love the way you lie</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('b987a0d3e07d6f10d3c434bfb69a651f-1000x1000x1.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(3,'work.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Shape of you</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('maxresdefault.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(0,'coffee.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Let Her Go</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('c05b3c4739a994bca85d932f6d6cb586.1000x1000x1.png'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(4,'work.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Animals</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('Song-Lyrics-blank-space-taylor-swift.png'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(0,'taylor.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Blank Space</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('906bce6e9d431ae1592e17f0253b2007.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(3,'justin.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Sorry</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div id="artist">
+
+        <div class="container-fluid">
+            <h1 style="color: white"><b>Hindi Chartbusters</b></h1>
+            <a href="#!hindichart"><p style="text-align: right; color: white">see all</p></a>
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('maxresdefault%20(1).jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(0,'hindi.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Bekhayali</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('iv.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(2,'hindi.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Brown Rang</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('maxresdefault%20(2).jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(4,'hindi.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Emptiness</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('m,m.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(6,'hindi.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Main Rahoon</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('Tum%20Hi%20Ho.jpg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(8,'hindi.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Tum hi ho</b></p>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card" id="bdy" style="width:180px; height: 180px;  background-image: url('Vaaste_song_cover.jpeg'); background-size: cover">
+                        <div class="card-body" style="border-radius: 50%; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"><button id="inline_btn" onclick="fun2(9,'hindi.json')"><i class="fas fa-play"></i></button>
+                            <button id="inline_btn_p"><i class="fas fa-pause"></i></button></div>
+                    </div>
+                    <p style="color: white; text-align: center"><b>Vaaste</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+      <script>
+        
+      </script>
+      <style>
+          
+          #bdy{
+              border-radius: 50%;              
+          }
+          #inline_btn{
+              position: relative;
+              left: 50px;
+              top: 35px;
+              background-color: rgba(0,0,0,0.0);
+              color: white;
+              border: none;
+              font-size: 40px;
+              
+          }
+          #inline_btn_p{
+              display: none;
+               position: relative;
+              left: 50px;
+              top: 35px;
+              background-color: rgba(0,0,0,0.0);
+              color: white;
+              border: none;
+              font-size: 40px;
+          }
+          #inline_btn_p:hover{
+              cursor: pointer;
+          }
+          #inline_btn:hover{
+              cursor: pointer;
+          }
+          
+          
+      </style>
+
+</body>
+
+</html>

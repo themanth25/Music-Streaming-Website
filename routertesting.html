@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <!--  <script src="angular.min.js"></script>-->
+    <script src="C:\Users\tunug\Desktop\project\bower-angular-route-master\bower-angular-route-master\angular-route.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>  
+
+  <link rel="stylesheet" href="main.css">
+  </head>
+  <body ng-app="myApp">
+
+
+<div ng-view></div>
+
+
+    <div class="player" id="pler">
+        <p style="color: white; position: absolute; top: 56px; left: 20px;" id="song_name"></p>
+        <p style="color: white; position: absolute; top: 56px; left: 310px;" id="tim">00</p><p style="color: white; position: absolute; top: 55px; right: 375px;" id="tim2">00</p>
+<button type="button" id="play_button"  name="button"><i class="fas fa-play"></i></button>
+<button type="button" id="pause_button" onclick="pau()" name="button"><i class="fas fa-pause"></i></button>
+<button type="button" id="forw" name="button"><i class="fas fa-forward"></i></button>
+<button type="button" id="back"  name="button"><i class="fas fa-backward"></i></button>
+    <button type="button" id="vol" onclick="pau()" name="button"><i class="fas fa-volume-up"></i></button>
+<input id="ran" type="range" min="0" max="100" value="50" />
+<div id="progress">
+    <div id="progress_bar">  </div>
+</div>
+</div>
+</body>
+<script src="player.js"></script>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/",{
+      templateUrl : "main2.html"
+    })
+    .when("/dis", {
+        templateUrl : "discover.html"
+    })
+    .when("/chart", {
+        templateUrl : "chart.html"
+    })
+    .when("/sad", {
+        templateUrl : "sad.html"
+    })
+    .when("/happy", {
+        templateUrl : "happy.html"
+    })
+    .when("/zayn", {
+        templateUrl : "zayn.html"
+    })
+    .when("/justin", {
+        templateUrl : "justin.html"
+    })
+    .when("/taylor",{
+        templateUrl : "taylor.html"
+    })
+    .when("/shakira",{
+        templateUrl : "shakira.html"
+    })
+    .when("/selena",{
+      templateUrl:"selena.html"
+    })
+    .when("/warm",{
+      templateUrl:"warm.html"
+    })
+    .when("/hindichart",{
+      templateUrl:"hindichart.html"
+    })
+    .when("/acoustic",{
+      templateUrl:"acoustic.html"
+    })
+    .when("/work",{
+      templateUrl:"work.html"
+    })
+    .when("/coffee",{
+      templateUrl:"coffee.html"
+    })
+    .when("/englishchart",{
+      templateUrl:"englishchart.html"
+    })
+    .when("/eminem",{
+      templateUrl:"eminem.html"
+    });
+
+});
+</script>
+
+</html>

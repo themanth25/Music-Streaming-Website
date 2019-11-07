@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<img id="im1" src="" alt="">
+  </body>
+  <script>
+console.log("bjsa");
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+
+        if(xhr.readyState == 4 || xhr.status == 200){
+          var x = JSON.parse(xhr.responseText);
+          console.log(x);
+          
+        }
+
+    };
+        xhr.open("GET","data.json",true);
+        xhr.send();
+
+console.log("abs");
+
+    </script>
+</html>

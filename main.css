@@ -1,0 +1,139 @@
+*{
+          margin: 0px;
+      }
+      .player{
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          height:100px;
+          background: #282b2a;
+
+      }
+body{
+    background: linear-gradient(to top, #024d5c 19%, #000000 110%);
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rbga(255,255,255,0.0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4a4a49;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#progress{
+    position: absolute;
+    top: 67px;
+    left: 25%;
+      background-color:black;
+      width:45%;
+    height: 7px;
+    padding: 0px;
+  border-radius:10px;
+}
+#progress_bar{
+  background-color: white;
+    border-radius: 5px;
+    height: 7px;
+    width: 0%;
+}
+      #play_button{
+          position: absolute;
+          top:8px;
+          font-size: 15px;
+          background-color: black;
+          color: white;
+          width: 40px;
+          height: 40px;
+          border: 0px;
+          left: 46.5%;
+          border-radius: 50%;
+      }
+       #pause_button{
+          position: absolute;
+           display: none;
+          top:8px;
+          font-size: 15px;
+          background-color: black;
+          color: white;
+          width: 40px;
+          height: 40px;
+          border: 0px;
+          left: 46.5%;
+          border-radius: 50%;
+      }
+       #back{
+          position: absolute;
+          top:12px;
+          font-size: 12px;
+          background-color: black;
+          color: white;
+          width: 33px;
+          height: 33px;
+          border: 0px;
+          left: 40%;
+          border-radius: 50%;
+      }
+       #forw{
+          position: absolute;
+          top:12px;
+          font-size: 12px;
+          background-color: black;
+          color: white;
+          width: 33px;
+          height: 33px;
+          border: 0px;
+          left: 53.2%;
+          border-radius: 50%;
+      }
+      #vol{
+          position: absolute;
+          top:55px;
+          font-size: 12px;
+          background-color: black;
+          color: white;
+          width: 33px;
+          height: 33px;
+          border: 0px;
+          right: 17%;
+          border-radius: 50%;
+      }
+
+      #ran{
+          -webkit-appearance: none;
+          position: absolute;
+          top: 68px;
+          right: 7%;
+          height: 8px;
+          background-color: black;
+          border-radius: 5px;
+
+      }
+      #ran::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+          border-radius: 50%;
+  background: #F1891E;
+border-color: black;
+  cursor: pointer;
+}
+#main{
+  width: 100%;
+  height: 560px;
+    overflow:auto;
+    padding-bottom: 15px;
+}

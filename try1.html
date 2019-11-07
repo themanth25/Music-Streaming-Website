@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            #ran:hover{
+                cursor:pointer;
+            }
+            #try{
+              background-color: red;
+              width:500px;
+            }
+        </style>
+    </head>
+    <body>
+        <audio id="try" controls>
+            <source src="All%20Of%20The%20Stars%20-%20Ed%20Sheeran.mp3" type="audio/mpeg">
+        </audio><br>
+        <button onclick="pl()">Play</button><br>
+        <button onclick="pa()">Pause</button><br>
+        <input id="ran" type="range" min="0" max="100" value="50" />
+        <p id="a"></p>
+        <button onclick="se()">SEEK</button>
+        <input id="seek" type="range"  name="" value="30" />
+        <script>
+            var slide = document.getElementById("ran");
+
+            var val = document.getElementById("a");
+            slide.oninput = function(){
+                val.innerHTML = this.value;
+                var vol = document.getElementById("try");
+                var t = this.value;
+                vol.volume = t/100;
+            }
+
+            var see = document.getElementById("seek");
+            see.oninput = function(){
+              var ac = document.getElementById("try");
+              val.innerHTML=this.value*2.33;
+              var dura = ac.duration/100;
+              ac.currentTime = this.value*dura;
+            }
+
+
+            function pl(){
+                var x = document.getElementById("try");
+                console.log(x.duration);
+
+                x.play();
+            }
+            function pa(){
+                var x = document.getElementById("try");
+                x.pause();
+            }
+            function se(){
+                var x = document.getElementById("try");
+                x.currentTime = 232;
+            }
+            async ac => function(){
+              var aaa = document.getElementById("try");
+              see.value=aaa.currentTime;
+            }
+
+        </script>
+    </body>
+</html>
